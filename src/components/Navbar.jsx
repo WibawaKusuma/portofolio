@@ -37,7 +37,7 @@ function Navbar({ theme, setTheme }) {
       >
         <div className="flex items-center justify-between gap-4 px-4 py-3 md:px-6">
           <a href="#home" className="headline-font text-lg font-bold tracking-wide md:text-xl">
-            NamaKamu<span className="text-[var(--color-accent)]">.</span>
+            Wibawa<span className="text-[var(--color-accent)]">.</span>
           </a>
 
           <nav className="hidden items-center gap-2 md:flex">
