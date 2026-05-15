@@ -58,12 +58,20 @@ function Skills({ skills }) {
             whileHover={{ y: -6, scale: 1.02 }}
             className="premium-card flex h-full flex-col rounded-[28px] bg-white p-6 dark:bg-slate-900/80"
           >
-            <div className="mb-5 inline-flex h-13 w-13 items-center justify-center rounded-[20px] bg-[var(--color-accent-soft)] text-[var(--color-accent)]">
+            <motion.div
+              whileHover={{ scale: 1.06 }}
+              transition={{ duration: 0.25 }}
+              className="mb-5 inline-flex h-[52px] w-[52px] items-center justify-center rounded-full shadow-sm transition-all duration-300"
+              style={{
+                backgroundColor: skill.iconBg,
+                boxShadow: `0 10px 24px ${skill.iconBg}`,
+              }}
+            >
               {(() => {
                 const Icon = iconMap[skill.iconKey];
-                return Icon ? <Icon size={30} /> : null;
+                return Icon ? <Icon size={30} style={{ color: skill.color }} /> : null;
               })()}
-            </div>
+            </motion.div>
             <span className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-accent)]">
               {skill.level}
             </span>
