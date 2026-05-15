@@ -9,13 +9,14 @@ function Education({ educations }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6 }}
+        className="mx-auto max-w-3xl text-center"
       >
         <span className="section-label">Education</span>
-        <h2 className="section-title mt-5">Riwayat pendidikan dan pembelajaran</h2>
-        <p className="section-description">
+        <h2 className="section-title mt-5">Riwayat pendidikan</h2>
+        {/* <p className="section-description">
           Bagian ini menampilkan perjalanan pendidikan dalam bentuk timeline yang tetap nyaman dibaca
           di layar kecil maupun besar.
-        </p>
+        </p> */}
       </motion.div>
 
       <div className="relative mt-10 space-y-6 before:absolute before:bottom-0 before:left-[19px] before:top-0 before:w-px before:bg-[var(--color-border)] md:before:left-1/2 md:before:-translate-x-1/2">

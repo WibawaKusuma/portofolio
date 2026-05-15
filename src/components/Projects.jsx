@@ -9,13 +9,14 @@ function Projects({ projects }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6 }}
+         className="mx-auto max-w-3xl text-center"
       >
         <span className="section-label">Projects</span>
-        <h2 className="section-title mt-5">Beberapa project yang bisa kamu tampilkan</h2>
+        {/* <h2 className="section-title mt-5">Beberapa project yang bisa kamu tampilkan</h2>
         <p className="section-description">
           Data project dipisahkan ke file array JavaScript agar kamu cukup edit kontennya nanti tanpa
           menyentuh komponen tampilan.
-        </p>
+        </p> */}
       </motion.div>
 
       <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -54,7 +55,7 @@ function Projects({ projects }) {
                 ))}
               </div>
 
-              <div className="mt-6 flex items-center gap-3">
+              {/* <div className="mt-6 flex items-center gap-3">
                 <a
                   href={project.demoUrl}
                   className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-slate-950 px-4 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition-all duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-blue-500/25 dark:bg-white dark:text-slate-950 dark:hover:bg-blue-500 dark:hover:text-white"
@@ -69,7 +70,7 @@ function Projects({ projects }) {
                 >
                   <Github size={18} />
                 </a>
-              </div>
+              </div> */}
             </div>
           </motion.article>
         ))}

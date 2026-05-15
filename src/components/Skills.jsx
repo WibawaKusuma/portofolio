@@ -27,7 +27,7 @@ const iconMap = {
   bootstrap: FaBootstrap,
 };
 
-function Skills({ skills }) {
+function Skills({ skillCategories }) {
   return (
     <section id="skills" className="section-shell section-space">
       <motion.div
@@ -35,50 +35,63 @@ function Skills({ skills }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6 }}
-        className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between"
+        className="mx-auto max-w-3xl text-center"
       >
-        <div>
-          <span className="section-label">Skills</span>
-          <h2 className="section-title mt-5">Tools dan teknologi yang sering digunakan</h2>
-          <p className="section-description">
-            Semua data skill dibuat dalam array terpisah supaya nanti kamu bisa menambah, menghapus,
-            atau mengganti isi tanpa mengubah struktur komponen.
-          </p>
-        </div>
+        <span className="section-label">Skills</span>
+        <h2 className="section-title mt-5">Teknologi</h2>
+        {/* <p className="section-description">
+          Saya kelompokkan berdasarkan area kerja supaya lebih mudah dibaca dan lebih terasa seperti
+          stack yang benar-benar dipakai dalam project.
+        </p> */}
       </motion.div>
 
-      <div className="mt-10 grid items-stretch gap-5 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6">
-        {skills.map((skill, index) => (
+      <div className="mt-10 space-y-10">
+        {skillCategories.map((category, categoryIndex) => (
           <motion.div
-            key={skill.name}
+            key={category.title}
             initial={{ opacity: 0, y: 24 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.45, delay: index * 0.05 }}
-            whileHover={{ y: -6, scale: 1.02 }}
-            className="premium-card flex h-full flex-col rounded-[28px] bg-white p-6 dark:bg-slate-900/80"
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.5, delay: categoryIndex * 0.05 }}
           >
-            <motion.div
-              whileHover={{ scale: 1.06 }}
-              transition={{ duration: 0.25 }}
-              className="mb-5 inline-flex h-[52px] w-[52px] items-center justify-center rounded-full shadow-sm transition-all duration-300"
-              style={{
-                backgroundColor: skill.iconBg,
-                boxShadow: `0 10px 24px ${skill.iconBg}`,
-              }}
-            >
-              {(() => {
+            <div className="mb-5 flex items-center gap-3">
+              <h3 className="text-base font-semibold tracking-tight md:text-lg">{category.title}</h3>
+              <span className="h-px flex-1 bg-[var(--color-border)]" />
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-6">
+              {category.items.map((skill, itemIndex) => {
                 const Icon = iconMap[skill.iconKey];
-                return Icon ? <Icon size={30} style={{ color: skill.color }} /> : null;
-              })()}
-            </motion.div>
-            <span className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-accent)]">
-              {skill.level}
-            </span>
-            <h3 className="mt-4 text-lg font-semibold">{skill.name}</h3>
-            <p className="mt-3 text-sm leading-7 text-[var(--color-text-muted)]">
-              {skill.description}
-            </p>
+
+                return (
+                  <motion.article
+                    key={skill.name}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ duration: 0.4, delay: itemIndex * 0.04 }}
+                    whileHover={{ y: -4 }}
+                    className="premium-card flex min-h-[122px] items-center gap-4 rounded-[24px] bg-white px-5 py-5 transition-all duration-300 hover:shadow-[0_14px_30px_rgba(15,23,42,0.08)] dark:bg-slate-900/80"
+                  >
+                    <motion.div
+                      whileHover={{ scale: 1.06 }}
+                      transition={{ duration: 0.25 }}
+                      className="inline-flex h-[54px] w-[54px] shrink-0 items-center justify-center rounded-full shadow-sm transition-all duration-300"
+                      style={{
+                        backgroundColor: skill.iconBg,
+                        boxShadow: `0 10px 24px ${skill.iconBg}`,
+                      }}
+                    >
+                      {Icon ? <Icon size={30} style={{ color: skill.color }} /> : null}
+                    </motion.div>
+
+                    <div className="min-w-0">
+                      <h4 className="text-base font-semibold leading-6">{skill.name}</h4>
+                    </div>
+                  </motion.article>
+                );
+              })}
+            </div>
           </motion.div>
         ))}
       </div>

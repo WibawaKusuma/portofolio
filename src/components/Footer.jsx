@@ -1,11 +1,12 @@
-import { Github, Instagram, Linkedin, Mail, MessageCircle } from "lucide-react";
+import { FaGithub, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const iconMap = {
-  WhatsApp: MessageCircle,
-  Instagram: Instagram,
-  GitHub: Github,
-  LinkedIn: Linkedin,
-  Email: Mail,
+  WhatsApp: FaWhatsapp,
+  Instagram: FaInstagram,
+  GitHub: FaGithub,
+  LinkedIn: FaLinkedinIn,
+  Email: MdEmail,
 };
 
 function Footer({ socials }) {
@@ -15,22 +16,24 @@ function Footer({ socials }) {
         <p className="text-sm text-[var(--color-text-muted)]">
           © 2026 Wibawa. All rights reserved.
         </p>
-        <div className="flex items-center gap-2">
+        {/* <div className="flex items-center gap-2">
           {socials.map((social) => {
-            const Icon = iconMap[social.label];
+            const Icon = iconMap[social.name];
 
             return (
               <a
-                key={social.label}
-                href={social.url}
-                aria-label={social.label}
-                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[var(--color-border)] bg-[var(--color-surface-strong)] text-[var(--color-text-muted)] transition hover:text-[var(--color-text)]"
+                key={social.name}
+                href={social.href}
+                aria-label={social.name}
+                target={social.external ? "_blank" : undefined}
+                rel={social.external ? "noopener noreferrer" : undefined}
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[var(--color-border)] bg-[var(--color-surface-strong)] transition hover:-translate-y-0.5"
               >
-                <Icon size={16} />
+                {Icon ? <Icon size={16} style={{ color: social.color }} /> : null}
               </a>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </footer>
   );

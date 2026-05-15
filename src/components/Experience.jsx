@@ -9,13 +9,14 @@ function Experience({ experiences }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6 }}
+        className="mx-auto max-w-3xl text-center"
       >
         <span className="section-label">Experience</span>
-        <h2 className="section-title mt-5">Pengalaman kerja dan project profesional</h2>
-        <p className="section-description">
+        <h2 className="section-title mt-5">Pengalaman kerja</h2>
+        {/* <p className="section-description">
           Section ini memakai timeline modern agar perjalanan profesional kamu mudah dipahami. Semua
           data masih dummy dan bisa diganti langsung dari file array terpisah.
-        </p>
+        </p> */}
       </motion.div>
 
       <div className="relative mt-10 space-y-6 before:absolute before:bottom-0 before:left-[19px] before:top-0 before:w-px before:bg-[var(--color-border)] md:before:left-1/2 md:before:-translate-x-1/2">

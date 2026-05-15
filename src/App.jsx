@@ -12,7 +12,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import projects from "./data/projects";
-import skills from "./data/skills";
+import skillCategories from "./data/skills";
 import socials from "./data/socials";
 import experiences from "./data/experiences";
 import educations from "./data/educations";
@@ -87,7 +87,7 @@ function App() {
       <main>
         <Hero socials={socials} />
         <About />
-        <Skills skills={skills} />
+        <Skills skillCategories={skillCategories} />
         <Experience experiences={experiences} />
         <Education educations={educations} />
         <FeaturedProject project={featuredProject} />

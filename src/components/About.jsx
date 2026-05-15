@@ -27,14 +27,15 @@ function About() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6 }}
+        className="mx-auto max-w-3xl text-center"
       >
         <span className="section-label">About Me</span>
-        <h2 className="section-title mt-5">Tentang saya secara singkat</h2>
-        <p className="section-description">
+        <h2 className="section-title mt-5">Tentang saya</h2>
+        {/* <p className="section-description">
           Bagian ini disiapkan sebagai placeholder yang mudah kamu ganti. Isi dengan cerita singkat
           tentang latar belakang, pengalaman, pendekatan kerja, dan nilai yang ingin kamu tampilkan
           kepada recruiter, client, atau calon kolaborator.
-        </p>
+        </p> */}
       </motion.div>
 
       <div className="mt-10 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">

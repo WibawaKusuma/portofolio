@@ -43,7 +43,7 @@ function FeaturedProject({ project }) {
               ))}
             </div>
 
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            {/* <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
                 href={project.demoUrl}
                 className="inline-flex items-center justify-center gap-2 rounded-full bg-slate-950 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/20 transition-all duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-blue-500/25 dark:bg-white dark:text-slate-950 dark:hover:bg-blue-500 dark:hover:text-white"
@@ -57,7 +57,7 @@ function FeaturedProject({ project }) {
               >
                 Source Code
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </motion.div>
