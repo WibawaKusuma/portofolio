@@ -2,7 +2,7 @@ const educations = [
   {
     school: "Universitas Primakara",
     major: "Teknik Informatika",
-    period: "2022 - Now",
+    period: "2022 - Sekarang",
     location: "Bali, Indonesia",
     description:
       "Mempelajari dasar pemrograman, pengembangan web, basis data, analisis sistem, dan perancangan aplikasi informasi.",

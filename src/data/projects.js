@@ -4,7 +4,7 @@ const projects = [
     description:
       "Dashboard interaktif untuk menampilkan statistik bisnis, insight performa, dan visualisasi data yang mudah dibaca.",
     image: "/super-user-dashboard.png",
-    tech: ["React", "Tailwind", "Laravel", "MySQL"],
+    tech: ["Filament", "Tailwind", "Laravel", "MySQL"],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -27,10 +27,10 @@ const projects = [
     githubUrl: "#",
   },
   {
-    title: "Aluh Trans Booking Platform",
+    title: "Aluh Trans",
     description:
       "Antarmuka platform booking dengan alur pemesanan sederhana, komponen reusable, dan pengalaman pengguna yang bersih.",
-    image: "/project-placeholder.svg",
+    image: "/aluh-trans.png",
     tech: ["PHP", "Bootstrap", "CodeIgniter", "MySQL"],
     demoUrl: "#",
     githubUrl: "#",
