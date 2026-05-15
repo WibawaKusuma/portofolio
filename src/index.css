@@ -1,5 +1,5 @@
 @custom-variant dark (&:where(.dark, .dark *));
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -45,11 +45,21 @@ body {
     radial-gradient(circle at top, rgba(59, 130, 246, 0.15), transparent 28%),
     linear-gradient(180deg, var(--color-bg-secondary) 0%, var(--color-bg) 28%, var(--color-bg) 100%);
   color: var(--color-text);
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 * {
   box-sizing: border-box;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -95,7 +105,7 @@ button {
 }
 
 .headline-font {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .grid-pattern {
@@ -112,7 +122,7 @@ button {
 
 .section-title {
   @apply text-3xl font-bold tracking-tight md:text-4xl;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .section-description {
