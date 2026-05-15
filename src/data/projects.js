@@ -18,7 +18,7 @@ const projects = [
     githubUrl: "#",
   },
   {
-    title: "Website Bali Treesco",
+    title: "Bali Treesco",
     description:
       "Sistem pengelolaan stok barang dengan fitur monitoring, pencatatan transaksi, dan ringkasan laporan operasional.",
     image: "/bali-treesco.png",

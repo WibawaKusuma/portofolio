@@ -2,7 +2,7 @@ const experiences = [
   {
     role: "Fullstack Developer",
     company: "Sanata System",
-    period: "1 Nov 2023 - Sekarang",
+    period: "Nov 2023 - Sekarang",
     location: "Bali, Indonesia",
     description:
       "Membangun dan mengembangkan tampilan aplikasi web yang responsive, modern, dan fokus pada pengalaman pengguna.",
@@ -13,20 +13,20 @@ const experiences = [
     ],
     tools: ["CodeIgniter", "Bootstrap", "Git"],
   },
-  // {
-  //   role: "Freelance Web Developer",
-  //   company: "Client Project Studio",
-  //   period: "Jun 2023 - Des 2023",
-  //   location: "Remote",
-  //   description:
-  //     "Mengerjakan beberapa website client mulai dari landing page, company profile, hingga dashboard internal sederhana.",
-  //   responsibilities: [
-  //     "Mendesain dan membangun tampilan website sesuai kebutuhan client",
-  //     "Melakukan revisi tampilan dan peningkatan performa pada halaman utama",
-  //     "Berkomunikasi dengan client untuk memastikan hasil akhir sesuai target",
-  //   ],
-  //   tools: ["JavaScript", "Laravel", "Figma"],
-  // },
+  {
+    role: "Freelance Web Application Developer",
+    company: "Private Client",
+    period: "Jan 2023 - Sekarang",
+    location: "Remote",
+    description:
+      "Mengerjakan beberapa website dan aplikasi sederhana mulai dari landing page, company profile, hingga dashboard internal.",
+    responsibilities: [
+      "Mendesain dan membangun tampilan website dan aplikasi sesuai kebutuhan client",
+      "Melakukan optimasi dan peningkatan performa website dan aplikasi",
+      "Berkomunikasi dengan client untuk memastikan hasil akhir sesuai target",
+    ],
+    tools: ["JavaScript", "PHP", "CodeIgniter", "Bootstrap", "Git"],
+  },
   // {
   //   role: "Web Development Intern",
   //   company: "Nama Instansi / Startup",
