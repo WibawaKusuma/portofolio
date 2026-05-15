@@ -31,12 +31,12 @@ const skillCategories = [
   {
     title: "Frontend",
     items: [
-      {
-        name: "React",
-        iconKey: "react",
-        color: "#61DAFB",
-        iconBg: "rgba(97, 218, 251, 0.14)",
-      },
+      // {
+      //   name: "React",
+      //   iconKey: "react",
+      //   color: "#61DAFB",
+      //   iconBg: "rgba(97, 218, 251, 0.14)",
+      // },
       {
         name: "Tailwind CSS",
         iconKey: "tailwind",
