@@ -45,7 +45,7 @@ function Navbar({ theme, setTheme }) {
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full px-4 py-2 text-sm font-medium text-[var(--color-text-muted)] transition hover:bg-white/10 hover:text-[var(--color-text)]"
+                className="rounded-full px-4 py-2 text-sm font-medium text-[var(--color-text-muted)] transition hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-white"
               >
                 {item.label}
               </a>
@@ -82,7 +82,7 @@ function Navbar({ theme, setTheme }) {
                       key={item.href}
                       href={item.href}
                       onClick={closeMenu}
-                      className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-3 text-sm font-medium text-[var(--color-text-muted)] transition hover:text-[var(--color-text)]"
+                      className="rounded-2xl border border-[var(--color-border)] bg-white px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50 hover:text-slate-900 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800 dark:hover:text-white"
                     >
                       {item.label}
                     </a>

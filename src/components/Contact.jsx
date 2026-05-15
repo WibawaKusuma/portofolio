@@ -45,11 +45,15 @@ function Contact({ socials }) {
               transition={{ duration: 0.4, delay: index * 0.05 }}
               whileHover={{ y: -3, scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
-              className="inline-flex h-[54px] w-[54px] items-center justify-center rounded-2xl border border-[var(--color-border)] bg-white shadow-sm transition-all duration-300 hover:shadow-[0_14px_28px_rgba(15,23,42,0.10)] dark:bg-slate-900/80"
+              className="inline-flex h-[54px] w-[54px] items-center justify-center rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:shadow-[0_14px_28px_rgba(15,23,42,0.10)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 dark:border-slate-700 dark:bg-slate-900/80 dark:focus-visible:ring-blue-300"
             >
               {Icon ? (
                 <motion.span whileHover={{ rotate: 6, scale: 1.08 }} transition={{ duration: 0.22 }}>
-                  <Icon size={24} style={{ color: social.color }} />
+                  <Icon
+                    size={24}
+                    style={social.color ? { color: social.color } : undefined}
+                    className={social.className}
+                  />
                 </motion.span>
               ) : null}
             </motion.a>

@@ -14,7 +14,7 @@ const socials = [
   {
     name: "GitHub",
     href: "https://github.com/usernamekamu",
-    color: "#181717",
+    className: "text-slate-900 dark:text-white",
     external: true,
   },
   {

@@ -20,8 +20,8 @@ function ThemeToggle({ theme, setTheme }) {
             onClick={() => setTheme(option.value)}
             className={`inline-flex items-center gap-2 rounded-full px-3 py-2 text-xs font-semibold transition sm:text-sm ${
               isActive
-                ? "bg-[var(--color-text)] text-[var(--color-bg)]"
-                : "text-[var(--color-text-muted)] hover:text-[var(--color-text)]"
+                ? "bg-blue-600 text-white dark:bg-blue-500 dark:text-white"
+                : "text-[var(--color-text-muted)] hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-white"
             }`}
           >
             <Icon size={15} />
