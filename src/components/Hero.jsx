@@ -17,7 +17,7 @@ function Hero() {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="relative z-10"
         >
-          <span className="section-label">Personal Portfolio</span>
+          {/* <span className="section-label">Personal Portfolio</span> */}
           <h1 className="headline-font mt-6 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-7xl">
             Hi, Saya <span className="text-[var(--color-accent)]">Wibawa</span>
           </h1>
