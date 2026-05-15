@@ -88,12 +88,12 @@ const skillCategories = [
         color: "#F05032",
         iconBg: "rgba(240, 80, 50, 0.12)",
       },
-      {
-        name: "Figma",
-        iconKey: "figma",
-        color: "#A259FF",
-        iconBg: "rgba(162, 89, 255, 0.14)",
-      },
+      // {
+      //   name: "Figma",
+      //   iconKey: "figma",
+      //   color: "#A259FF",
+      //   iconBg: "rgba(162, 89, 255, 0.14)",
+      // },
     ],
   },
 ];

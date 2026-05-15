@@ -20,7 +20,7 @@ const projects = [
   {
     title: "Bali Treesco",
     description:
-      "Sistem pengelolaan stok barang dengan fitur monitoring, pencatatan transaksi, dan ringkasan laporan operasional.",
+      "Sistem pemesanan dan pengelolaan stok barang dengan fitur monitoring, pencatatan transaksi, dan ringkasan laporan operasional.",
     image: "/bali-treesco.png",
     tech: ["PHP", "Bootstrap", "CodeIgniter", "MySQL"],
     demoUrl: "https://www.balitreesco.com/",

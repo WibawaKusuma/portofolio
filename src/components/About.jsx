@@ -4,17 +4,17 @@ import { Code2, LayoutDashboard, Sparkles } from "lucide-react";
 const highlights = [
   {
     title: "Fokus pada pengembangan web",
-    description: "Saya paling nyaman mengerjakan aplikasi berbasis web yang dipakai untuk kebutuhan admin, operasional, dan pengelolaan data.",
+    description: "Saya suka mengerjakan aplikasi berbasis web yang dipakai untuk kebutuhan admin, operasional, dan pengelolaan data.",
     icon: Code2,
   },
   {
     title: "Suka membangun sistem yang rapi dipakai",
-    description: "Saya tertarik pada dashboard admin, sistem informasi, sistem apotek, dan aplikasi internal yang benar-benar membantu pekerjaan jadi lebih ringan.",
+    description: "Saya tertarik pada dashboard admin, sistem informasi dan aplikasi internal yang benar-benar membantu pekerjaan jadi lebih ringan.",
     icon: LayoutDashboard,
   },
   {
     title: "Terbuka dengan stack modern",
-    description: "Saya cukup sering bekerja dengan Laravel, CodeIgniter, PHP, MySQL, JavaScript, React, Tailwind CSS, Bootstrap, Git, dan Figma.",
+    description: "Saya cukup sering bekerja dengan Laravel, CodeIgniter, PHP, MySQL, JavaScript, React, Tailwind CSS, Bootstrap, dan Git.",
     icon: Sparkles,
   },
 ];
