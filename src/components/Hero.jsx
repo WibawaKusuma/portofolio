@@ -2,9 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, BadgeCheck, BriefcaseBusiness, CodeXml } from "lucide-react";
 
 const roles = [
-  "Web Developer",
-  "Full Stack Developer",
-  "CodeIgniter Developer",
+  "Full Stack Web Developer"
 ];
 
 function Hero() {
