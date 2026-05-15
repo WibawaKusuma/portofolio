@@ -47,7 +47,11 @@ function Contact({ socials }) {
               whileTap={{ scale: 0.97 }}
               className="inline-flex h-[54px] w-[54px] items-center justify-center rounded-2xl border border-[var(--color-border)] bg-white shadow-sm transition-all duration-300 hover:shadow-[0_14px_28px_rgba(15,23,42,0.10)] dark:bg-slate-900/80"
             >
-              {Icon ? <Icon size={24} style={{ color: social.color }} /> : null}
+              {Icon ? (
+                <motion.span whileHover={{ rotate: 6, scale: 1.08 }} transition={{ duration: 0.22 }}>
+                  <Icon size={24} style={{ color: social.color }} />
+                </motion.span>
+              ) : null}
             </motion.a>
           );
         })}

@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import Lenis from "lenis";
 import { ChevronUp } from "lucide-react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -27,6 +28,7 @@ const getInitialTheme = () => {
 function App() {
   const [theme, setTheme] = useState(getInitialTheme);
   const [isScrolled, setIsScrolled] = useState(false);
+  const prefersReducedMotion = useReducedMotion();
 
   useEffect(() => {
     const root = document.documentElement;
@@ -62,6 +64,32 @@ function App() {
   }, [theme]);
 
   useEffect(() => {
+    if (prefersReducedMotion) return undefined;
+
+    const lenis = new Lenis({
+      duration: 1.15,
+      smoothWheel: true,
+      smoothTouch: false,
+      wheelMultiplier: 0.95,
+      touchMultiplier: 1,
+    });
+
+    let rafId = 0;
+
+    const raf = (time) => {
+      lenis.raf(time);
+      rafId = window.requestAnimationFrame(raf);
+    };
+
+    rafId = window.requestAnimationFrame(raf);
+
+    return () => {
+      window.cancelAnimationFrame(rafId);
+      lenis.destroy();
+    };
+  }, [prefersReducedMotion]);
+
+  useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 480);
     };
@@ -77,8 +105,58 @@ function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[var(--color-bg)] text-[var(--color-text)] transition-colors duration-500">
       <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute left-[-8rem] top-[-4rem] h-72 w-72 rounded-full bg-[var(--color-accent-soft)] blur-3xl" />
-        <div className="absolute right-[-6rem] top-[18rem] h-80 w-80 rounded-full bg-[var(--color-accent-strong)] opacity-45 blur-3xl" />
+        <motion.div
+          animate={
+            prefersReducedMotion
+              ? undefined
+              : {
+                  x: [0, 22, -12, 0],
+                  y: [0, 18, -10, 0],
+                  scale: [1, 1.05, 0.98, 1],
+                }
+          }
+          transition={{
+            duration: 18,
+            repeat: Infinity,
+            repeatType: "mirror",
+            ease: "easeInOut",
+          }}
+          className="absolute left-[-8rem] top-[-4rem] h-72 w-72 rounded-full bg-[var(--color-accent-soft)] blur-3xl"
+        />
+        <motion.div
+          animate={
+            prefersReducedMotion
+              ? undefined
+              : {
+                  x: [0, -26, 12, 0],
+                  y: [0, -18, 14, 0],
+                  scale: [1, 0.98, 1.06, 1],
+                }
+          }
+          transition={{
+            duration: 22,
+            repeat: Infinity,
+            repeatType: "mirror",
+            ease: "easeInOut",
+          }}
+          className="absolute right-[-6rem] top-[18rem] h-80 w-80 rounded-full bg-[var(--color-accent-strong)] opacity-45 blur-3xl"
+        />
+        <motion.div
+          animate={
+            prefersReducedMotion
+              ? undefined
+              : {
+                  opacity: [0.12, 0.2, 0.14, 0.12],
+                  scale: [1, 1.04, 1, 1],
+                }
+          }
+          transition={{
+            duration: 16,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="absolute bottom-[-8rem] left-1/3 h-60 w-60 rounded-full bg-sky-300/20 blur-3xl"
+        />
         <div className="grid-pattern absolute inset-0 opacity-40" />
       </div>
 

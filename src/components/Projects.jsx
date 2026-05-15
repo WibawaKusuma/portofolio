@@ -26,15 +26,15 @@ function Projects({ projects }) {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
-            transition={{ duration: 0.5, delay: index * 0.06 }}
-            whileHover={{ y: -8 }}
-            className="premium-card overflow-hidden rounded-[28px]"
+            transition={{ duration: 0.55, delay: index * 0.07 }}
+            whileHover={{ y: -4 }}
+            className="premium-card overflow-hidden rounded-[28px] transition-shadow duration-300 hover:shadow-[0_18px_40px_rgba(15,23,42,0.10)]"
           >
             <div className="overflow-hidden">
               <img
                 src={project.image}
                 alt={project.title}
-                className="h-52 w-full object-cover transition duration-500 hover:scale-105"
+                className="h-52 w-full object-cover transition duration-700 hover:scale-[1.03]"
               />
             </div>
 

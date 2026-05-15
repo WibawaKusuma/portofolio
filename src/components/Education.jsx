@@ -12,7 +12,7 @@ function Education({ educations }) {
         className="mx-auto max-w-3xl text-center"
       >
         <span className="section-label">Education</span>
-        <h2 className="section-title mt-5">Riwayat pendidikan</h2>
+        <h2 className="section-title mt-5">Pendidikan</h2>
         {/* <p className="section-description">
           Bagian ini menampilkan perjalanan pendidikan dalam bentuk timeline yang tetap nyaman dibaca
           di layar kecil maupun besar.

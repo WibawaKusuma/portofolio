@@ -11,6 +11,7 @@ function FeaturedProject({ project }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6 }}
+        whileHover={{ y: -4 }}
         className="premium-card overflow-hidden rounded-[34px] p-6 md:p-8"
       >
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
@@ -18,7 +19,7 @@ function FeaturedProject({ project }) {
             <img
               src={project.image}
               alt={project.title}
-              className="h-full min-h-[280px] w-full object-cover"
+              className="h-full min-h-[280px] w-full object-cover transition duration-700 hover:scale-[1.02]"
             />
           </div>
 

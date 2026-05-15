@@ -35,10 +35,10 @@ function Skills({ skillCategories }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6 }}
-        className="max-w-3xl"
+        className="mx-auto max-w-3xl text-center"
       >
         <span className="section-label">Skills</span>
-        <h2 className="section-title mt-5">Teknologi yang saya pakai</h2>
+        <h2 className="section-title mt-5">Teknologi</h2>
       </motion.div>
 
       <div className="mt-10 space-y-8">
@@ -66,16 +66,19 @@ function Skills({ skillCategories }) {
                     viewport={{ once: true, amount: 0.2 }}
                     transition={{ duration: 0.4, delay: itemIndex * 0.04 }}
                     whileHover={{ y: -2, scale: 1.01 }}
+                    whileTap={{ scale: 0.98 }}
                     className="inline-flex items-center gap-2.5 rounded-full border border-[var(--color-border)] bg-white px-4 py-2.5 shadow-[0_4px_14px_rgba(15,23,42,0.05)] transition-all duration-300 hover:shadow-[0_10px_22px_rgba(15,23,42,0.08)] dark:bg-slate-900/80"
                   >
-                    <div
+                    <motion.div
+                      whileHover={{ scale: 1.08, rotate: 4 }}
+                      transition={{ duration: 0.22 }}
                       className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full"
                       style={{
                         backgroundColor: skill.iconBg,
                       }}
                     >
                       {Icon ? <Icon size={20} style={{ color: skill.color }} /> : null}
-                    </div>
+                    </motion.div>
 
                     <span className="whitespace-nowrap text-sm font-medium text-[var(--color-text)]">
                       {skill.name}
