@@ -16,7 +16,7 @@ const experiences = [
   {
     role: "Freelance Web Application Developer",
     company: "Private Client",
-    period: "Jan 2023 - Sekarang",
+    period: "Jan 2024 - Sekarang",
     location: "Remote",
     description:
       "Mengerjakan beberapa website dan aplikasi sederhana mulai dari landing page, company profile, hingga dashboard internal.",

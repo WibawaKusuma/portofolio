@@ -4,17 +4,17 @@ import { Code2, LayoutDashboard, Sparkles } from "lucide-react";
 const highlights = [
   {
     title: "Fokus pada pengembangan web",
-    description: "Membangun website yang cepat, rapi, dan nyaman digunakan di berbagai perangkat.",
+    description: "Saya paling nyaman mengerjakan aplikasi berbasis web yang dipakai untuk kebutuhan admin, operasional, dan pengelolaan data.",
     icon: Code2,
   },
   {
-    title: "Suka membuat dashboard dan sistem informasi",
-    description: "Terbiasa menyusun antarmuka data yang informatif untuk kebutuhan bisnis maupun internal.",
+    title: "Suka membangun sistem yang rapi dipakai",
+    description: "Saya tertarik pada dashboard admin, sistem informasi, sistem apotek, dan aplikasi internal yang benar-benar membantu pekerjaan jadi lebih ringan.",
     icon: LayoutDashboard,
   },
   {
-    title: "Terbiasa menggunakan teknologi modern",
-    description: "Nyaman bekerja dengan stack modern agar pengembangan lebih efisien dan mudah dipelihara.",
+    title: "Terbuka dengan stack modern",
+    description: "Saya cukup sering bekerja dengan Laravel, CodeIgniter, PHP, MySQL, JavaScript, React, Tailwind CSS, Bootstrap, Git, dan Figma.",
     icon: Sparkles,
   },
 ];
@@ -31,14 +31,9 @@ function About() {
       >
         <span className="section-label">About Me</span>
         <h2 className="section-title mt-5">Tentang saya</h2>
-        {/* <p className="section-description">
-          Bagian ini disiapkan sebagai placeholder yang mudah kamu ganti. Isi dengan cerita singkat
-          tentang latar belakang, pengalaman, pendekatan kerja, dan nilai yang ingin kamu tampilkan
-          kepada recruiter, client, atau calon kolaborator.
-        </p> */}
       </motion.div>
 
-      <div className="mt-10 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
+      <div className="mt-10 grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
         <motion.div
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -47,17 +42,41 @@ function About() {
           className="premium-card rounded-[30px] p-6 md:p-8"
         >
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--color-accent)]">
-            Placeholder Bio
+            Bio
           </p>
-          <p className="mt-5 text-base leading-8 text-[var(--color-text-muted)] md:text-lg">
-            Saya adalah seorang developer yang senang mengubah ide menjadi produk digital yang
-            berguna. Saya tertarik pada pengalaman pengguna yang bersih, performa yang baik, dan
-            struktur kode yang mudah dikembangkan dalam jangka panjang.
-          </p>
-          <p className="mt-4 text-base leading-8 text-[var(--color-text-muted)] md:text-lg">
-            Kamu bisa mengganti seluruh teks ini dengan profil pribadi, pengalaman kerja, fokus
-            spesialisasi, atau pencapaian yang ingin ditonjolkan.
-          </p>
+
+          <div className="about-copy mt-5 max-w-3xl space-y-5 text-[15px] leading-8 text-[var(--color-text-muted)] md:text-[1.02rem] md:leading-8">
+            <p>
+              Saya bernama Wibawa Kusuma. Saat ini saya fokus sebagai seorang Full Stack Developer
+              yang memiliki ketertarikan besar di bidang pengembangan website dan sistem berbasis
+              web. Saya senang mempelajari hal-hal baru di dunia teknologi, terutama yang berkaitan
+              dengan web development, user interface, dan pengembangan sistem yang dapat membantu
+              pekerjaan menjadi lebih efisien dan terstruktur.
+            </p>
+
+            <p>
+              Saya terbiasa membangun berbagai jenis aplikasi seperti dashboard admin, sistem
+              informasi, website company profile, hingga aplikasi manajemen data menggunakan
+              teknologi seperti Laravel, CodeIgniter, PHP, MySQL, JavaScript, React, Tailwind CSS,
+              dan Bootstrap. Bagi saya, sebuah aplikasi tidak hanya harus terlihat menarik, tetapi
+              juga harus mudah digunakan, responsif, dan nyaman untuk dikembangkan dalam jangka
+              panjang.
+            </p>
+
+            <p>
+              Selain fokus pada coding, saya juga senang mengeksplorasi perkembangan teknologi
+              modern dan terus meningkatkan kemampuan agar dapat mengikuti kebutuhan industri digital
+              saat ini. Saya memiliki kepribadian yang disiplin, mudah bekerja sama dalam tim, serta
+              selalu berusaha menjaga komunikasi dan tanggung jawab dalam setiap proses pengerjaan
+              project.
+            </p>
+
+            <p>
+              Di luar aktivitas development, saya juga menikmati waktu dengan bermain game,
+              mengeksplorasi desain antarmuka, dan mempelajari berbagai hal baru yang dapat
+              menambah pengalaman serta kreativitas dalam membangun produk digital.
+            </p>
+          </div>
         </motion.div>
 
         <div className="grid gap-5">
