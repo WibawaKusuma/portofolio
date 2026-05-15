@@ -11,7 +11,7 @@ const experiences = [
       "Mengintegrasikan frontend dengan API backend untuk menampilkan data dinamis",
       "Mengoptimalkan tampilan agar konsisten di mobile, tablet, dan desktop",
     ],
-    tools: ["CodeIgniter", "Bootstrap", "Git"],
+    tools: ["CodeIgniter","Laravel","Filament", "Bootstrap", "Git"],
   },
   {
     role: "Freelance Web Application Developer",
@@ -25,7 +25,7 @@ const experiences = [
       "Melakukan optimasi dan peningkatan performa website dan aplikasi",
       "Berkomunikasi dengan client untuk memastikan hasil akhir sesuai target",
     ],
-    tools: ["JavaScript", "PHP", "CodeIgniter", "Bootstrap", "Git"],
+    tools: ["JavaScript", "CodeIgniter", "Bootstrap", "Git"],
   },
   // {
   //   role: "Web Development Intern",
