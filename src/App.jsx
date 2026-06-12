@@ -9,10 +9,12 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import FeaturedProject from "./components/FeaturedProject";
+import Products from "./components/Products";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import projects from "./data/projects";
+import products from "./data/products";
 import skillCategories from "./data/skills";
 import socials from "./data/socials";
 import experiences from "./data/experiences";
@@ -168,7 +170,8 @@ function App() {
         <Skills skillCategories={skillCategories} />
         <Experience experiences={experiences} />
         <Education educations={educations} />
-        <FeaturedProject project={featuredProject} />
+        <Products products={products} />
+        {/* <FeaturedProject project={featuredProject} /> */}
         <Projects projects={projects.slice(0, 6)} />
         <Contact socials={socials} />
       </main>

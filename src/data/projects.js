@@ -1,17 +1,17 @@
 const projects = [
+  // {
+  //   title: "Super User Dashboard",
+  //   description:
+  //     "Dashboard interaktif untuk menampilkan statistik bisnis, insight performa, dan visualisasi data yang mudah dibaca.",
+  //   image: "/super-user-dashboard.png",
+  //   tech: ["Filament", "Tailwind", "Laravel", "MySQL"],
+  //   demoUrl: "#",
+  //   githubUrl: "#",
+  // },
   {
-    title: "Super User Dashboard",
+    title: "Is Laundry",
     description:
-      "Dashboard interaktif untuk menampilkan statistik bisnis, insight performa, dan visualisasi data yang mudah dibaca.",
-    image: "/super-user-dashboard.png",
-    tech: ["Filament", "Tailwind", "Laravel", "MySQL"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Aplikasi Laundry",
-    description:
-      "Aplikasi berbasis web untuk mengelola bisnis laundry dengan fitur pemesanan, tracking, dan laporan transaksi.",
+      "Aplikasi berbasis web untuk mengelola bisnis laundry dengan fitur pelanggan, transaksi, laporan operasional dan omzet bisnis.",
     image: "/laundry-app.png",
     tech: ["PHP", "Bootstrap", "CodeIgniter", "MySQL"],
     demoUrl: "#",
@@ -29,7 +29,7 @@ const projects = [
   {
     title: "Aluh Trans",
     description:
-      "Antarmuka platform booking dengan alur pemesanan sederhana, komponen reusable, dan pengalaman pengguna yang bersih.",
+      "Platform booking dengan alur pemesanan sederhana, katalog armada dan destinasi, dan ringkasan laporan operasional.",
     image: "/aluh-trans.png",
     tech: ["PHP", "Bootstrap", "CodeIgniter", "MySQL"],
     demoUrl: "#",
